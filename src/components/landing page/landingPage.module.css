@@ -1,0 +1,101 @@
+.gradientBackground{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(300deg, #3D154B  , #080a15 55%);
+}
+
+
+
+
+
+
+
+.externalHeader{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    color: aliceblue;
+}
+.innerHeader{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-left: -50px;
+}
+
+.logo{
+    width: 10%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titles{
+    padding-bottom: 7px;
+    border-bottom: 2px transparent;
+    cursor: default;
+
+    transition-duration: 0.2s;
+}
+.titles:hover{
+    padding-bottom: 1px;
+
+    border-bottom: 2px solid #ffff;
+}
+
+
+
+
+.animationDev{
+    width: 40%;
+}
+
+
+
+
+
+.externalText{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+
+    animation: entryText 1s;
+}
+
+.innerText{
+    width: 35%;
+    height: 40%vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.contatoButton{
+    font-weight: 300;
+    color: #949191;
+    cursor: default;
+    width: 111px;
+
+    transition-duration: 0.1s;
+}
+.contatoButton:hover{
+    color: #FCEB57;
+}
+
+
+
+@keyframes entryText {
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
